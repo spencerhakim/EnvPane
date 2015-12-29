@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -37,7 +37,7 @@
 		D1EFCA5116912C6600013C1A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EFCA5016912C6600013C1A /* WebKit.framework */; };
 		D1EFCA54169240E000013C1A /* AboutSheetController.h in Headers */ = {isa = PBXBuildFile; fileRef = D1EFCA52169240E000013C1A /* AboutSheetController.h */; };
 		D1EFCA55169240E000013C1A /* AboutSheetController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1EFCA53169240E000013C1A /* AboutSheetController.m */; };
-		D1F69A2C1683CF4200319AE5 /* EnvAgent in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47A7E83A08C3B78F00D0011D /* EnvAgent */; };
+		D1F69A2C1683CF4200319AE5 /* EnvAgent in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47A7E83A08C3B78F00D0011D /* EnvAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D1F739A2168D3E6B009F8342 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F739A0168D3E6B009F8342 /* Constants.h */; };
 		E2ADE0B608395131000B79B2 /* EnvAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0B508395131000B79B2 /* EnvAgent.m */; };
 /* End PBXBuildFile section */
@@ -169,11 +169,12 @@
 		D19BDB5D1671286100C6467B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D10BFDE21688E81600C6A4CF /* ServiceManagement.framework */,
-				D10BFDDB1688DE0B00C6A4CF /* SecurityFoundation.framework */,
-				D1E16E66167292D100724499 /* CoreFoundation.framework */,
 				D19BDB5E1671286100C6467B /* Cocoa.framework */,
+				D1E16E66167292D100724499 /* CoreFoundation.framework */,
 				D19BDB601671286100C6467B /* PreferencePanes.framework */,
+				D10BFDDB1688DE0B00C6A4CF /* SecurityFoundation.framework */,
+				D10BFDE21688E81600C6A4CF /* ServiceManagement.framework */,
+				D1EFCA5016912C6600013C1A /* WebKit.framework */,
 				D19BDB621671286100C6467B /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -192,18 +193,18 @@
 		D19BDB661671286100C6467B /* EnvPane */ = {
 			isa = PBXGroup;
 			children = (
-				D19BDB6D1671286100C6467B /* EnvPane.h */,
-				D19BDB6E1671286100C6467B /* EnvPane.m */,
-				D1313656167714790059AF76 /* EnvVarsController.h */,
-				D1313657167714790059AF76 /* EnvVarsController.m */,
-				D131365B16771BBD0059AF76 /* EnvVarsDragController.h */,
-				D131365C16771BBD0059AF76 /* EnvVarsDragController.m */,
-				D19BDB721671286100C6467B /* EnvPane.xib */,
-				D1334E3D168699030018F00D /* EnvPane.icns */,
-				D19BDB671671286100C6467B /* Supporting Files */,
-				D1EFCA4E16912AD800013C1A /* AboutSheet.xib */,
 				D1EFCA52169240E000013C1A /* AboutSheetController.h */,
+				D19BDB6D1671286100C6467B /* EnvPane.h */,
+				D1313656167714790059AF76 /* EnvVarsController.h */,
+				D131365B16771BBD0059AF76 /* EnvVarsDragController.h */,
+				D1334E3D168699030018F00D /* EnvPane.icns */,
 				D1EFCA53169240E000013C1A /* AboutSheetController.m */,
+				D19BDB6E1671286100C6467B /* EnvPane.m */,
+				D1313657167714790059AF76 /* EnvVarsController.m */,
+				D131365C16771BBD0059AF76 /* EnvVarsDragController.m */,
+				D1EFCA4E16912AD800013C1A /* AboutSheet.xib */,
+				D19BDB721671286100C6467B /* EnvPane.xib */,
+				D19BDB671671286100C6467B /* Supporting Files */,
 			);
 			path = EnvPane;
 			sourceTree = "<group>";
@@ -211,9 +212,9 @@
 		D19BDB671671286100C6467B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D19BDB6C1671286100C6467B /* EnvPane-Prefix.pch */,
 				D19BDB681671286100C6467B /* EnvPane-Info.plist */,
 				D19BDB691671286100C6467B /* InfoPlist.strings */,
-				D19BDB6C1671286100C6467B /* EnvPane-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,15 +231,15 @@
 		D1C85DB5167FC234007C2CE7 /* EnvLib */ = {
 			isa = PBXGroup;
 			children = (
-				D1334E3816858FFC0018F00D /* Environment.h */,
-				D1334E3916858FFC0018F00D /* Environment.m */,
 				D1F739A0168D3E6B009F8342 /* Constants.h */,
+				D1334E3816858FFC0018F00D /* Environment.h */,
 				D18C420816CC1DC700EF620B /* Error.h */,
-				D18C420B16CC1E0C00EF620B /* Error.m */,
-				D154534F16CC4045008A3ADB /* NSFileManager+EnvLib.h */,
-				D154535016CC4045008A3ADB /* NSFileManager+EnvLib.m */,
 				D154535316CC74AB008A3ADB /* NSDictionary+EnvLib.h */,
+				D154534F16CC4045008A3ADB /* NSFileManager+EnvLib.h */,
+				D1334E3916858FFC0018F00D /* Environment.m */,
+				D18C420B16CC1E0C00EF620B /* Error.m */,
 				D154535416CC74AB008A3ADB /* NSDictionary+EnvLib.m */,
+				D154535016CC4045008A3ADB /* NSFileManager+EnvLib.m */,
 			);
 			path = EnvLib;
 			sourceTree = "<group>";
@@ -246,12 +247,11 @@
 		E2ADE09E08395023000B79B2 = {
 			isa = PBXGroup;
 			children = (
-				D1EFCA5016912C6600013C1A /* WebKit.framework */,
-				D1FC1DBC168F90AB004F5901 /* README.md */,
-				D1F739AE168F7F40009F8342 /* NOTICE */,
 				D1F739AD168EFA01009F8342 /* LICENSE */,
-				D1C85DB5167FC234007C2CE7 /* EnvLib */,
+				D1F739AE168F7F40009F8342 /* NOTICE */,
+				D1FC1DBC168F90AB004F5901 /* README.md */,
 				D19BDB791671287100C6467B /* EnvAgent */,
+				D1C85DB5167FC234007C2CE7 /* EnvLib */,
 				D19BDB661671286100C6467B /* EnvPane */,
 				D19BDB5D1671286100C6467B /* Frameworks */,
 				E2ADE0B2083950E7000B79B2 /* Products */,
@@ -359,10 +359,10 @@
 		E2ADE0A208395023000B79B2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = 47BFFDF808902CAE003DA0CC /* Build configuration list for PBXProject "EnvPane" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -500,30 +500,25 @@
 		47BFFDF908902CAE003DA0CC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = NO;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Hannes Schmidt";
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_TESTABILITY = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -532,42 +527,33 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
-				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(launchd_source_dir)/liblaunch /usr/local/include";
-				VALID_ARCHS = x86_64;
-				launchd_source_dir = "$(SRCROOT)/../launchd-442.26.2";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.11;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch /usr/local/include";
 			};
 			name = Development;
 		};
 		47BFFDFA08902CAE003DA0CC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = NO;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Hannes Schmidt";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -578,39 +564,31 @@
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(launchd_source_dir)/liblaunch /usr/local/include";
-				VALID_ARCHS = x86_64;
-				launchd_source_dir = "$(SRCROOT)/../launchd-442.26.2";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.11;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch /usr/local/include";
 			};
 			name = Deployment;
 		};
 		47BFFDFB08902CAE003DA0CC /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = NO;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application: Hannes Schmidt";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
 				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
-				GCC_WARN_PEDANTIC = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -621,11 +599,9 @@
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				SDKROOT = macosx;
-				USER_HEADER_SEARCH_PATHS = "$(launchd_source_dir)/liblaunch /usr/local/include";
-				VALID_ARCHS = x86_64;
-				launchd_source_dir = "$(SRCROOT)/../launchd-442.26.2";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.11;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch /usr/local/include";
 			};
 			name = Default;
 		};
@@ -633,7 +609,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -645,6 +620,7 @@
 					"-lmarkdown",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.hannesschmidt.EnvPane;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Development;
@@ -653,7 +629,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EnvPane/EnvPane-Prefix.pch";
@@ -663,7 +638,7 @@
 					"-lmarkdown",
 					"-all_load",
 				);
-				SKIP_INSTALL = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = net.hannesschmidt.EnvPane;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Deployment;
@@ -672,7 +647,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EnvPane/EnvPane-Prefix.pch";
@@ -682,6 +656,7 @@
 					"-lmarkdown",
 					"-all_load",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.hannesschmidt.EnvPane;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Default;
@@ -690,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				SKIP_INSTALL = YES;
 			};
@@ -699,6 +675,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				SKIP_INSTALL = YES;
 			};
@@ -708,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
 				SKIP_INSTALL = YES;
 			};
