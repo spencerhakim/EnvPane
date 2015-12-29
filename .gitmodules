@@ -1,0 +1,3 @@
+[submodule "launchd"]
+	path = launchd
+	url = https://github.com/aosm/launchd.git
