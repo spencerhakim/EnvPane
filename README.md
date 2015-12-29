@@ -68,8 +68,10 @@ The uninstallation should be clean. I went to great lengths in ensuring that rem
 Changelog
 ---------
 
-### unreleased
+### v0.4
 
+Changed: Built against latest SDKs, frameworks, and launchd source
+Changed: Built with latest Xcode
 Fix: envlib_unsetenv() is invoked unnecessarily with empty string if environment is empty ([issue #3] [12])
 
 ### v0.3
