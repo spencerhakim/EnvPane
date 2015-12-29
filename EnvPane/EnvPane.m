@@ -163,7 +163,7 @@
     NSURL* agentConfUrl = [agentConfsUrl URLByAppendingPathComponent: agentConfName];
 
     NSDictionary* curAgentConf = nil;
-    if( [fileManager fileExistsAtPath: agentConfUrl.path isDirectory: NO] ) {
+    if( [fileManager fileExistsAtPath: agentConfUrl.path isDirectory: FALSE] ) {
         curAgentConf = [NSDictionary dictionaryWithContentsOfURL: agentConfUrl];
     }
 
@@ -231,9 +231,9 @@
     return self.agentInstalled = YES;
 }
 
-- (void) presentError: (NSError*) error
+- (BOOL) presentError: (NSError*) error
 {
-    [[NSApplication sharedApplication] presentError: error];
+    return [[NSApplication sharedApplication] presentError: error];
 }
 
 - (IBAction) showReadme: (id) sender

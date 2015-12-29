@@ -14,6 +14,9 @@
  * limitations under the License.
  */
 
+// Most if not all of the launch_* functions are deprecated as of OS X 10.10
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+
 #import "Environment.h"
 #import "Error.h"
 #import "NSFileManager+EnvLib.h"
