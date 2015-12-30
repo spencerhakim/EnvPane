@@ -16,7 +16,7 @@
 
 #import "AboutSheetController.h"
 
-#include "mkdio.h"
+#import "cmark.h"
 
 @implementation AboutSheetController
 
@@ -45,17 +45,17 @@
     NSString* readme = [NSString stringWithContentsOfURL: readmeUrl
                                                 encoding: NSUTF8StringEncoding
                                                    error: &error];
+    
     const char *markup = [readme cStringUsingEncoding: NSUTF8StringEncoding];
-    MMIOT *markdown = mkd_string( markup, (int) strlen( markup ), 0 );
-    mkd_compile( markdown, 0 );
-    char *html = NULL;
-    mkd_document( markdown, &html );
+    char *html = cmark_markdown_to_html(markup, strlen(markup), CMARK_OPT_VALIDATE_UTF8);
+    
     NSString* nsHtml = [NSString stringWithCString: html
                                           encoding: NSUTF8StringEncoding];
+    free(html);
+    
     WebView *view = (WebView *) self.view;
     [view.mainFrame loadHTMLString: nsHtml
                            baseURL: readmeUrl];
-    mkd_cleanup( markdown );
 
     [NSRunLoop.currentRunLoop
      performSelector: @selector( beginSheet )

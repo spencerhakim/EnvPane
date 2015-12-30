@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		D1334E371685084F0018F00D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D19BDB651671286100C6467B /* Foundation.framework */; };
 		D1334E3A16858FFC0018F00D /* Environment.h in Headers */ = {isa = PBXBuildFile; fileRef = D1334E3816858FFC0018F00D /* Environment.h */; };
 		D1334E3B16858FFC0018F00D /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = D1334E3916858FFC0018F00D /* Environment.m */; };
-		D1334E3C168639270018F00D /* libEnvLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C85DAF167FC18B007C2CE7 /* libEnvLib.a */; };
+		D1334E3C168639270018F00D /* libEnvPane.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C85DAF167FC18B007C2CE7 /* libEnvPane.a */; };
 		D1334E3E168699030018F00D /* EnvPane.icns in Resources */ = {isa = PBXBuildFile; fileRef = D1334E3D168699030018F00D /* EnvPane.icns */; };
 		D154535116CC4045008A3ADB /* NSFileManager+EnvLib.h in Headers */ = {isa = PBXBuildFile; fileRef = D154534F16CC4045008A3ADB /* NSFileManager+EnvLib.h */; };
 		D154535216CC4045008A3ADB /* NSFileManager+EnvLib.m in Sources */ = {isa = PBXBuildFile; fileRef = D154535016CC4045008A3ADB /* NSFileManager+EnvLib.m */; };
@@ -30,7 +30,7 @@
 		D19BDB6B1671286100C6467B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D19BDB691671286100C6467B /* InfoPlist.strings */; };
 		D19BDB6F1671286100C6467B /* EnvPane.m in Sources */ = {isa = PBXBuildFile; fileRef = D19BDB6E1671286100C6467B /* EnvPane.m */; };
 		D19BDB741671286100C6467B /* EnvPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19BDB721671286100C6467B /* EnvPane.xib */; };
-		D1C85DBE167FCC6C007C2CE7 /* libEnvLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C85DAF167FC18B007C2CE7 /* libEnvLib.a */; };
+		D1C85DBE167FCC6C007C2CE7 /* libEnvPane.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1C85DAF167FC18B007C2CE7 /* libEnvPane.a */; };
 		D1E16E68167292D100724499 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E16E66167292D100724499 /* CoreFoundation.framework */; };
 		D1EFCA4D16911E3400013C1A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D1FC1DBC168F90AB004F5901 /* README.md */; };
 		D1EFCA4F16912AD800013C1A /* AboutSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EFCA4E16912AD800013C1A /* AboutSheet.xib */; };
@@ -40,6 +40,7 @@
 		D1F69A2C1683CF4200319AE5 /* EnvAgent in CopyFiles */ = {isa = PBXBuildFile; fileRef = 47A7E83A08C3B78F00D0011D /* EnvAgent */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D1F739A2168D3E6B009F8342 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = D1F739A0168D3E6B009F8342 /* Constants.h */; };
 		E2ADE0B608395131000B79B2 /* EnvAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ADE0B508395131000B79B2 /* EnvAgent.m */; };
+		F27E5FD81C337FA00056EE0F /* libcmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F27E5FD31C337F790056EE0F /* libcmark.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = D1C85DAE167FC18A007C2CE7;
 			remoteInfo = EnvLib;
+		};
+		F27E5FCE1C337F790056EE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27E5FC31C337F790056EE0F /* cmark.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2278DB3BF84498BB2F54E07;
+			remoteInfo = cmark;
+		};
+		F27E5FD01C337F790056EE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27E5FC31C337F790056EE0F /* cmark.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3CEBA8879816467282C78B0A;
+			remoteInfo = libcmark;
+		};
+		F27E5FD21C337F790056EE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27E5FC31C337F790056EE0F /* cmark.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3BD3E48209C547FCACADE1DA;
+			remoteInfo = libcmark_static;
+		};
+		F27E5FD41C337F790056EE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27E5FC31C337F790056EE0F /* cmark.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F07E00D1A7DB4F22AC94C3F1;
+			remoteInfo = api_test;
+		};
+		F27E5FD61C337F980056EE0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F27E5FC31C337F790056EE0F /* cmark.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 38704BB9151F4C74994AC8E4;
+			remoteInfo = libcmark_static;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -118,7 +154,7 @@
 		D19BDB6D1671286100C6467B /* EnvPane.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnvPane.h; sourceTree = "<group>"; };
 		D19BDB6E1671286100C6467B /* EnvPane.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnvPane.m; sourceTree = "<group>"; };
 		D19BDB731671286100C6467B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EnvPane.xib; sourceTree = "<group>"; };
-		D1C85DAF167FC18B007C2CE7 /* libEnvLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEnvLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C85DAF167FC18B007C2CE7 /* libEnvPane.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEnvPane.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E16E66167292D100724499 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
 		D1EFCA4E16912AD800013C1A /* AboutSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutSheet.xib; sourceTree = "<group>"; };
 		D1EFCA5016912C6600013C1A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -130,6 +166,7 @@
 		D1FC1DBC168F90AB004F5901 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E2ADE0B508395131000B79B2 /* EnvAgent.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = EnvAgent.m; sourceTree = "<group>"; };
 		E2ADE0C2083951BC000B79B2 /* net.hannesschmidt.EnvAgent.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = net.hannesschmidt.EnvAgent.plist; sourceTree = "<group>"; };
+		F27E5FC31C337F790056EE0F /* cmark.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cmark.xcodeproj; path = cmark_xcode/cmark.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +174,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F27E5FD81C337FA00056EE0F /* libcmark.a in Frameworks */,
+				D1334E3C168639270018F00D /* libEnvPane.a in Frameworks */,
 				D1EFCA5116912C6600013C1A /* WebKit.framework in Frameworks */,
 				D10BFDE31688E81600C6A4CF /* ServiceManagement.framework in Frameworks */,
 				D10BFDDC1688DE0B00C6A4CF /* SecurityFoundation.framework in Frameworks */,
-				D1334E3C168639270018F00D /* libEnvLib.a in Frameworks */,
 				D19BDB5F1671286100C6467B /* Cocoa.framework in Frameworks */,
 				D19BDB611671286100C6467B /* PreferencePanes.framework in Frameworks */,
 				D1E16E68167292D100724499 /* CoreFoundation.framework in Frameworks */,
@@ -158,7 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1C85DBE167FCC6C007C2CE7 /* libEnvLib.a in Frameworks */,
+				D1C85DBE167FCC6C007C2CE7 /* libEnvPane.a in Frameworks */,
 				D1334E371685084F0018F00D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +293,7 @@
 				D19BDB661671286100C6467B /* EnvPane */,
 				D19BDB5D1671286100C6467B /* Frameworks */,
 				E2ADE0B2083950E7000B79B2 /* Products */,
+				F27E5FC31C337F790056EE0F /* cmark.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,7 +302,18 @@
 			children = (
 				47A7E83A08C3B78F00D0011D /* EnvAgent */,
 				D19BDB5C1671286100C6467B /* EnvPane.prefPane */,
-				D1C85DAF167FC18B007C2CE7 /* libEnvLib.a */,
+				D1C85DAF167FC18B007C2CE7 /* libEnvPane.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F27E5FC41C337F790056EE0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F27E5FCF1C337F790056EE0F /* cmark */,
+				F27E5FD11C337F790056EE0F /* libcmark.dylib */,
+				F27E5FD31C337F790056EE0F /* libcmark.a */,
+				F27E5FD51C337F790056EE0F /* api_test */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,6 +361,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F27E5FD71C337F980056EE0F /* PBXTargetDependency */,
 				D1F69A271683CEF100319AE5 /* PBXTargetDependency */,
 				D1F69A291683CEF100319AE5 /* PBXTargetDependency */,
 			);
@@ -333,7 +384,7 @@
 			);
 			name = EnvLib;
 			productName = EnvLib;
-			productReference = D1C85DAF167FC18B007C2CE7 /* libEnvLib.a */;
+			productReference = D1C85DAF167FC18B007C2CE7 /* libEnvPane.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E2ADE0B0083950E7000B79B2 /* EnvAgent */ = {
@@ -362,7 +413,7 @@
 				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = 47BFFDF808902CAE003DA0CC /* Build configuration list for PBXProject "EnvPane" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -371,6 +422,12 @@
 			mainGroup = E2ADE09E08395023000B79B2;
 			productRefGroup = E2ADE0B2083950E7000B79B2 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F27E5FC41C337F790056EE0F /* Products */;
+					ProjectRef = F27E5FC31C337F790056EE0F /* cmark.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E2ADE0B0083950E7000B79B2 /* EnvAgent */,
@@ -379,6 +436,38 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F27E5FCF1C337F790056EE0F /* cmark */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = cmark;
+			remoteRef = F27E5FCE1C337F790056EE0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F27E5FD11C337F790056EE0F /* libcmark.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			name = libcmark.dylib;
+			path = libcmark.0.23.0.dylib;
+			remoteRef = F27E5FD01C337F790056EE0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F27E5FD31C337F790056EE0F /* libcmark.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcmark.a;
+			remoteRef = F27E5FD21C337F790056EE0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F27E5FD51C337F790056EE0F /* api_test */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = api_test;
+			remoteRef = F27E5FD41C337F790056EE0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D19BDB591671286100C6467B /* Resources */ = {
@@ -454,6 +543,11 @@
 			target = D1C85DAE167FC18A007C2CE7 /* EnvLib */;
 			targetProxy = D1F69A281683CEF100319AE5 /* PBXContainerItemProxy */;
 		};
+		F27E5FD71C337F980056EE0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libcmark_static;
+			targetProxy = F27E5FD61C337F980056EE0F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -479,6 +573,7 @@
 		47BFFDF108902CAE003DA0CC /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = EnvAgent;
 				SKIP_INSTALL = YES;
 			};
 			name = Development;
@@ -486,6 +581,7 @@
 		47BFFDF208902CAE003DA0CC /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = EnvAgent;
 				SKIP_INSTALL = YES;
 			};
 			name = Deployment;
@@ -493,6 +589,7 @@
 		47BFFDF308902CAE003DA0CC /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = EnvAgent;
 				SKIP_INSTALL = YES;
 			};
 			name = Default;
@@ -518,7 +615,6 @@
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -527,11 +623,12 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.11;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch /usr/local/include";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch $(SRCROOT)/cmark/src $(SRCROOT)/cmark_xcode/src /usr/local/include";
 			};
 			name = Development;
 		};
@@ -553,7 +650,6 @@
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -562,11 +658,11 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.11;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch /usr/local/include";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch $(SRCROOT)/cmark/src $(SRCROOT)/cmark_xcode/src /usr/local/include";
 			};
 			name = Deployment;
 		};
@@ -588,7 +684,6 @@
 				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
 				GCC_WARN_SIGN_COMPARE = YES;
 				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -597,18 +692,17 @@
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-all_load";
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				SDKROOT = macosx10.11;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch /usr/local/include";
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/launchd/liblaunch $(SRCROOT)/cmark/src $(SRCROOT)/cmark_xcode/src /usr/local/include";
 			};
 			name = Default;
 		};
 		D19BDB761671286100C6467B /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
@@ -616,11 +710,8 @@
 				GCC_PREFIX_HEADER = "EnvPane/EnvPane-Prefix.pch";
 				INFOPLIST_FILE = "EnvPane/EnvPane-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
-				OTHER_LDFLAGS = (
-					"-lmarkdown",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.hannesschmidt.EnvPane;
+				PRODUCT_NAME = EnvPane;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Development;
@@ -628,17 +719,15 @@
 		D19BDB771671286100C6467B /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EnvPane/EnvPane-Prefix.pch";
 				INFOPLIST_FILE = "EnvPane/EnvPane-Info.plist";
-				INSTALL_PATH = /;
-				OTHER_LDFLAGS = (
-					"-lmarkdown",
-					"-all_load",
-				);
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				PRODUCT_BUNDLE_IDENTIFIER = net.hannesschmidt.EnvPane;
+				PRODUCT_NAME = EnvPane;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Deployment;
@@ -646,17 +735,15 @@
 		D19BDB781671286100C6467B /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EnvPane/EnvPane-Prefix.pch";
 				INFOPLIST_FILE = "EnvPane/EnvPane-Info.plist";
-				INSTALL_PATH = /;
-				OTHER_LDFLAGS = (
-					"-lmarkdown",
-					"-all_load",
-				);
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				PRODUCT_BUNDLE_IDENTIFIER = net.hannesschmidt.EnvPane;
+				PRODUCT_NAME = EnvPane;
 				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Default;
@@ -664,9 +751,9 @@
 		D1C85DB0167FC18B007C2CE7 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = EnvPane;
 				SKIP_INSTALL = YES;
 			};
 			name = Development;
@@ -674,9 +761,9 @@
 		D1C85DB1167FC18B007C2CE7 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = EnvPane;
 				SKIP_INSTALL = YES;
 			};
 			name = Deployment;
@@ -684,9 +771,9 @@
 		D1C85DB2167FC18B007C2CE7 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = EnvPane;
 				SKIP_INSTALL = YES;
 			};
 			name = Default;
